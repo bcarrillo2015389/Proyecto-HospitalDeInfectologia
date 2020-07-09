@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.briancarrillo.controller.EspecialidadController">
+   <children>
+      <Label layoutX="235.0" layoutY="15.0" text="Especialidades">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="26.0" layoutY="99.0" text="Nombre de Especialidad" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtNombreEspecialidad" editable="false" layoutX="193.0" layoutY="94.0" prefHeight="4.0" prefWidth="246.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TableView fx:id="tblEspecialidades" layoutX="26.0" layoutY="183.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEspecialidad" prefWidth="184.0" text="Código de Especialidad" />
+            <TableColumn fx:id="colNombreEspecialidad" prefWidth="365.0" text="Nombre de Especialidad" />
+        </columns>
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="39.0" layoutY="400.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="183.0" layoutY="400.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="325.0" layoutY="400.0" mnemonicParsing="false" onAction="#editar" text="Editar">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="110.0" fitWidth="78.0" layoutX="486.0" layoutY="30.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="456.0" layoutY="125.0" onMouseClicked="#menuPrincipal" text="Hospital de Infectología" textFill="#b93232">
+         <effect>
+            <DropShadow color="#c60505" />
+         </effect>
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigoEspecialidad" editable="false" layoutX="193.0" layoutY="53.0" prefHeight="4.0" prefWidth="246.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="22.0" layoutY="58.0" text="*Código de Especialidad" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <Label layoutX="458.0" layoutY="151.0" text="*Automático" textFill="#131314">
+         <effect>
+            <DropShadow color="#232325" />
+         </effect>
+      </Label>
+      <Button fx:id="btnReporte" disable="true" layoutX="464.0" layoutY="400.0" mnemonicParsing="false" onAction="#reporte" prefHeight="31.0" prefWidth="78.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

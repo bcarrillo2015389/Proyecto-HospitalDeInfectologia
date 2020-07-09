@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.briancarrillo.controller.ContactoUrgenciaController">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="78.0" layoutX="618.0" layoutY="19.0" onMouseClicked="#ventanaPacientes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="14.0" prefHeight="30.0" prefWidth="191.0" text="Contacto Urgencia" textFill="#39394a">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="36.0" layoutY="114.0" text="Nombres" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtNombres" editable="false" layoutX="179.0" layoutY="110.0" prefHeight="31.0" prefWidth="349.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="36.0" layoutY="161.0" text="Apellidos" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtApellidos" editable="false" layoutX="179.0" layoutY="156.0" prefHeight="31.0" prefWidth="349.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="35.0" layoutY="209.0" text="Número de Contacto" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtNumeroContacto" editable="false" layoutX="179.0" layoutY="204.0" prefHeight="31.0" prefWidth="349.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="btnNuevo" layoutX="67.0" layoutY="556.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="262.0" layoutY="556.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnEditar" layoutX="427.0" layoutY="556.0" mnemonicParsing="false" onAction="#editar" text="Editar">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnReporte" disable="true" layoutX="588.0" layoutY="556.0" mnemonicParsing="false" onAction="#reporte" prefHeight="31.0" prefWidth="78.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label layoutX="35.0" layoutY="254.0" text="Código de Paciente" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbCodigoPaciente" disable="true" layoutX="181.0" layoutY="249.0" prefHeight="31.0" prefWidth="163.0">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <TableView fx:id="tblContactoUrgencia" layoutX="27.0" layoutY="304.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="233.0" prefWidth="685.0">
+        <columns>
+            <TableColumn fx:id="colCodigo" prefWidth="85.0" text="Código" />
+          <TableColumn fx:id="colNombres" prefWidth="123.0" text="Nombres" />
+          <TableColumn fx:id="colApellidos" prefWidth="128.0" text="Apellidos" />
+            <TableColumn fx:id="colNumeroContacto" prefWidth="181.0" text="Número de Contacto" />
+            <TableColumn fx:id="colCodigoPaciente" minWidth="0.0" prefWidth="171.0" text="Código de Paciente" />
+        </columns>
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </TableView>
+      <Label layoutX="588.0" layoutY="108.0" onMouseClicked="#ventanaPacientes" text="Hospital de Infectología" textFill="#b93232">
+         <effect>
+            <DropShadow color="#c60505" />
+         </effect>
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigo" editable="false" layoutX="179.0" layoutY="64.0" prefHeight="31.0" prefWidth="349.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="27.0" layoutY="69.0" text="*Código" textFill="#3245c3">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+      </Label>
+      <Label layoutX="582.0" layoutY="135.0" text="*Automático" textFill="#131314">
+         <effect>
+            <DropShadow color="#232325" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

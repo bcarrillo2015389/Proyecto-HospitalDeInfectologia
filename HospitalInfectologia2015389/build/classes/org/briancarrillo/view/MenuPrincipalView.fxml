@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.briancarrillo.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="333.0" fitWidth="492.0" layoutX="13.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Fondo.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <MenuBar layoutX="241.0" layoutY="5.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaPacientes" text="Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicos" text="Médicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaAreas" text="Áreas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCargos" text="Cargos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaResponsablesTurno" text="Responsables de Turno" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaHorarios" text="Horarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedico_Especialidad" text="Medico-Especialidad" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTurnos" text="Turnos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#imprimirReporteFinal" text="Reporte Final" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteMedicos" text="Reporte de Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReportePacientes" text="Reporte de Pacientes" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <DropShadow color="#1425d6" />
+         </effect>
+      </MenuBar>
+      <ImageView fitHeight="106.0" fitWidth="91.0" layoutX="43.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow color="#1425d6" />
+         </effect>
+      </ImageView>
+      <Label layoutX="7.0" layoutY="109.0" text="Hospital de Infectología" textFill="#b93232">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#c60505" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

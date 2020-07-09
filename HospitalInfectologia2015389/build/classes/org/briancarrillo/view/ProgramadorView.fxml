@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.briancarrillo.controller.ProgramadorController">
+   <children>
+      <Label layoutX="16.0" layoutY="117.0" text="Nombre: Brian Anthony Carrillo Monzón" textFill="#3245c3">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="181.0" layoutY="27.0" text="Programador">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="292.0" layoutY="314.0" text="Carné: 2015389" textFill="#3245c3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="314.0" layoutY="333.0" text="Clave: 6" textFill="#3245c3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="17.0" layoutY="198.0" text="Código técnico: IN5AM" textFill="#3245c3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="16.0" layoutY="142.0" text="Fecha de Nacimiento: 03/11/2001" textFill="#3245c3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="14.0" layoutY="178.0" text="Ocupación: Programador Junior" textFill="#3245c3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="16.0" layoutY="257.0" text="Institución educativa:" textFill="#3245c3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <ImageView fitHeight="210.0" fitWidth="165.0" layoutX="256.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FotoProgramador.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="219.0" text="E-mail: bcarrillo-2015389@kinal.edu.gt" textFill="#3245c3">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="89.0" fitWidth="73.0" layoutX="370.0" layoutY="15.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#3245c3" />
+         </effect>
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="338.0" layoutY="95.0" onMouseClicked="#menuPrincipal" text="Hospital de Infectología" textFill="#b93232">
+         <effect>
+            <DropShadow color="#c60505" />
+         </effect>
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="276.0" text="Centro Educativo Técnico Laboral" textFill="#3245c3">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="295.0" text="KINAL" textFill="#3245c3">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="88.0" text="Datos personales">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
